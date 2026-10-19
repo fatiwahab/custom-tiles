@@ -6,7 +6,7 @@ A lightweight Manifest V3 extension that turns the new-tab page in Chrome, Brave
 - You can create a custom color combination if the 10 don't meet your requirements\
 
 
-<br>I created this because I wanted a very simple, nonesense new start page with easy access to my frequently used apps. I wanted to large tiles that could be color coded so that they're easier to use and organize. 
+<br>I created this because I wanted a very simple, no nonsense new start page with easy access to my frequently used apps. I wanted to large tiles that could be color coded so that they're easier to use and organize. 
 
 I plan to upload it to the Chrome web store soon. Will add a link so that it's eaiser to install. 
 
