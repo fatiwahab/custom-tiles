@@ -11,6 +11,11 @@ A lightweight Manifest V3 extension that turns the new-tab page in Chrome, Brave
 
 Chrome Web Store Link: Coming soon 🤞
 
+## AI Developed Tool
+
+This Chrome Extension was written using Codex (ChatGPT) with Security Review done by Claude Code
+Git push managed by Claude Code 
+
 ## Install unpacked
 
 1. Download or clone this repository.
