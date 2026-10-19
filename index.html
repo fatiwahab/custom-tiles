@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101214" />
+    <title>Favorite Tiles</title>
+    <link rel="icon" href="icons/icon-32.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="Favorite Tiles home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span>Favorite Tiles</span>
+        </div>
+        <button class="add-button" id="add-tile" type="button">
+          <span class="plus" aria-hidden="true">+</span>
+          <span>Add website</span>
+        </button>
+      </header>
+
+      <section class="content" aria-label="Your websites">
+        <div id="tile-grid" class="tile-grid" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state" hidden>
+          <div class="empty-icon" aria-hidden="true">✳</div>
+          <h2>Your page starts here</h2>
+          <p>Add the websites you want close at hand. You can keep up to 15.</p>
+          <button class="add-button" id="empty-add" type="button"><span class="plus" aria-hidden="true">+</span> Add your first website</button>
+        </div>
+        <p id="tile-count" class="tile-count"></p>
+      </section>
+      <footer class="footer"><span>Made for your everyday web</span><span class="footer-dot" aria-hidden="true">·</span><span id="footer-count"></span></footer>
+    </main>
+
+    <dialog id="tile-dialog" class="tile-dialog">
+      <form id="tile-form" method="dialog">
+        <div class="dialog-heading">
+          <div>
+            <p class="eyebrow">MAKE IT YOURS</p>
+            <h2 id="dialog-title">Add a website</h2>
+          </div>
+          <button class="icon-button close-button" type="button" id="close-dialog" aria-label="Close">×</button>
+        </div>
+        <label class="field-label" for="site-name">Name</label>
+        <input id="site-name" name="name" type="text" maxlength="48" placeholder="e.g. Linear" autocomplete="off" />
+        <label class="field-label" for="site-url">Website address</label>
+        <input id="site-url" name="url" type="text" placeholder="example.com" autocomplete="url" required />
+        <p id="form-error" class="form-error" role="alert" hidden></p>
+        <section class="palette-section" aria-labelledby="palette-title">
+          <span class="field-label" id="palette-title">Color combination</span>
+          <div id="palette-choices" class="palette-choices" role="group" aria-label="Choose a tile color combination"></div>
+          <div id="custom-colors" class="custom-colors" hidden>
+            <div class="color-field">
+              <label class="field-label" for="background-color">Tile background</label>
+              <div class="color-control"><input id="background-color" type="color" value="#E1EEFF" /><span id="background-color-value">#E1EEFF</span></div>
+            </div>
+            <div class="color-field">
+              <label class="field-label" for="text-color">Tile text</label>
+              <div class="color-control"><input id="text-color" type="color" value="#1D4ED8" /><span id="text-color-value">#1D4ED8</span></div>
+            </div>
+          </div>
+        </section>
+        <div class="form-row">
+          <div class="behavior-field">
+            <label class="field-label" for="open-behavior">Open website in</label>
+            <select id="open-behavior" name="openBehavior">
+              <option value="same-tab">Same tab</option>
+              <option value="new-tab">New tab</option>
+            </select>
+          </div>
+        </div>
+        <div class="dialog-actions">
+          <button class="remove-button" id="remove-tile" type="button" hidden>Remove website</button>
+          <button class="text-button" id="cancel-dialog" type="button">Cancel</button>
+          <button class="save-button" type="submit">Save website</button>
+        </div>
+      </form>
+    </dialog>
+
+    <template id="tile-template">
+      <article class="tile">
+        <a class="tile-link" draggable="false">
+          <span class="tile-topline"><span class="site-icon"><img alt="" /><span class="icon-fallback"></span></span><span class="external-mark" aria-label="Opens in a new tab" hidden>↗</span></span>
+          <span class="tile-name"></span>
+          <span class="tile-domain"></span>
+        </a>
+        <div class="tile-actions">
+          <button class="icon-button edit-tile" type="button" aria-label="Edit website">···</button>
+          <div class="move-controls">
+            <button class="icon-button move-up" type="button" aria-label="Move website earlier">↑</button>
+            <button class="icon-button move-down" type="button" aria-label="Move website later">↓</button>
+          </div>
+        </div>
+      </article>
+    </template>
+    <script src="app.js"></script>
+  </body>
+</html>
