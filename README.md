@@ -1,6 +1,9 @@
 # Favorite Tiles
 
 A lightweight Manifest V3 extension that turns the new-tab page in Chrome, Brave, and other Chromium browsers into a personal grid of website tiles.
+I created this because I wanted a very simple, nonesense new start page with easy access to my frequently used apps. I wanted to large tiles that could be color coded so that they're easier to use and organize. 
+
+I plan to upload it to the Chrome web store soon. Will add a link so that it's eaiser to install. 
 
 ## Install unpacked
 
@@ -17,3 +20,6 @@ Each tile can use one of the 10 color combinations from the supplied template, o
 ## Tile behavior
 
 New tiles open in the same tab by default. Edit a tile to choose **Same tab** or **New tab**. Each tile has its own name, color, and opening behavior.
+
+<img width="1624" height="1061" alt="Custom Tiles Add New Website" src="https://github.com/user-attachments/assets/155d2438-376f-489c-b538-2f78d9c0c83e" />
+<img width="1624" height="1061" alt="Custom Tiles Start Page" src="https://github.com/user-attachments/assets/b01d3d40-706a-429d-b63b-38e120d796ca" />
