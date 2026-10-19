@@ -2,7 +2,8 @@
 
 A lightweight Manifest V3 extension that turns the new-tab page in Chrome, Brave, and other Chromium browsers into a personal grid of website tiles.
 - You can add up to 15 tiles 
-- There are 10 preset color combinations to choose from 
+- There are 10 preset color combinations to choose from
+- By default, a tile opens the website in the current tab but the behavior can be customized on a per tile basis to open in the same or in a new tab
 - You can create a custom color combination if the 10 don't meet your requirements\
 
 
